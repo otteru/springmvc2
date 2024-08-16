@@ -49,7 +49,7 @@ public class ResponseBodyController {
 
     @ResponseStatus(HttpStatus.OK) // @ResponseBody를 넣으면 상태코드를 변경할 수 없으니까 이걸로 변경하면 됨
 //    @ResponseBody
-    @GetMapping("/response-body-json-v1")
+    @GetMapping("/response-body-json-v2")
     public HelloData responseBodyJsonV2() {
         HelloData helloData = new HelloData();
         helloData.setUsername("userA");
@@ -58,6 +58,8 @@ public class ResponseBodyController {
     }
 
 
-
+/**
+ *
+ * */
 
 }
